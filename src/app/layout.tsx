@@ -1,5 +1,4 @@
 import './globals.css'
-import Script from 'next/script'
 import { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -15,17 +14,17 @@ import { ENV } from '@/lib/constants'
 export const metadata: Metadata = {
   metadataBase: new URL(ENV.NEXT_PUBLIC_WEBSITE_URL),
   title: {
-    default: 'Wiscaksono',
-    template: '%s | Wiscaksono'
+    default: 'Mifolio',
+    template: '%s | Mifolio'
   },
   description:
-    "Get to know me, Wisnu Wicaksono, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
+    "Get to know me, Ilmi N Mubarok, through this website! I'm a passionate frontend developer, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
   openGraph: {
-    title: 'Wiscaksono',
+    title: 'Mifolio',
     description:
-      "Get to know me, Wisnu Wicaksono, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
+      "Get to know me, Ilmi N Mubarok, through this website! I'm a passionate frontend developer, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
     url: ENV.NEXT_PUBLIC_WEBSITE_URL,
-    siteName: 'Wiscaksono',
+    siteName: 'Mifolio',
     locale: 'en_US',
     type: 'website'
   },
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     }
   },
   twitter: {
-    title: 'Wiscaksono',
+    title: 'Mifolio',
     card: 'summary_large_image'
   },
   verification: {
@@ -63,7 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </main>
         </ThemeWrapper>
-        {process.env.NODE_ENV === 'production' && <Script async src='https://umami.wiscaksono.com/script.js' data-website-id='1f3b0505-7366-47bd-8757-95ad25395088' />}
         <ResponsiveIndicator />
       </body>
     </html>

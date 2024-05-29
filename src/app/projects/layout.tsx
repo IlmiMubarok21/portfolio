@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { RiReactjsLine, RiHtml5Fill } from 'react-icons/ri'
+import { RiReactjsLine } from 'react-icons/ri'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { HiTerminal } from 'react-icons/hi'
 
@@ -24,9 +24,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
         <Accordion type='single' collapsible defaultValue='item-0'>
           {data.map((item, i) => (
             <AccordionItem value={`item-${i}`} key={i}>
-              <AccordionTrigger className='border-b border-lines px-5 py-2.5 text-left' data-umami-event='accordion-project'>
-                {item.title}
-              </AccordionTrigger>
+              <AccordionTrigger className='border-b border-lines px-5 py-2.5 text-left'>{item.title}</AccordionTrigger>
               <AccordionContent className='mt-5 space-y-1'>
                 <FadeInStagger faster>
                   {item.list.map((listItem, j) => (
@@ -65,19 +63,9 @@ const data = [
         icon: <RiReactjsLine className='w-4 h-4' />
       },
       {
-        title: 'React Native',
-        href: '/projects?tag=React Native',
-        icon: <RiReactjsLine className='w-4 h-4' />
-      },
-      {
         title: 'Next',
         href: '/projects?tag=Next',
         icon: <TbBrandNextjs className='w-4 h-4' />
-      },
-      {
-        title: 'HTML',
-        href: '/projects?tag=HTML',
-        icon: <RiHtml5Fill className='w-4 h-4' />
       }
     ]
   }

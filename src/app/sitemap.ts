@@ -2,7 +2,6 @@ import { MetadataRoute } from 'next'
 import { allAbouts } from 'contentlayer/generated'
 import { allProjects } from 'contentlayer/generated'
 import { allActivity } from './coding-activity/allActivities'
-import { allArticles } from 'contentlayer/generated'
 
 import { ENV } from '@/lib/constants'
 
@@ -29,10 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date().toISOString().split('T')[0]
   }))
 
-  const articles = allArticles.map(article => ({
-    url: `${WEBSITE_URL}/articles/${article.slug.toLowerCase()}`,
-    lastModified: new Date().toISOString().split('T')[0]
-  }))
-
-  return [...routes, ...abouts, ...projects, ...activities, ...articles]
+  return [...routes, ...abouts, ...projects, ...activities]
 }

@@ -14,7 +14,7 @@ type Props = {
   className?: ClassValue
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const AsideLink = ({ href, children, startWith, title, className, ...props }: Props) => {
+export const AsideLink = ({ href, children, title, className, ...props }: Props) => {
   const segment = useSelectedLayoutSegment()
   const tag = useSearchParams().get('tag')
   const isActive = tag === title || segment === title

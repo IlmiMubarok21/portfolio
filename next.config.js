@@ -15,15 +15,6 @@ const nextConfig = {
     fetches: {
       fullUrl: true
     }
-  },
-  redirects() {
-    return [
-      {
-        source: '/about',
-        destination: '/about/personal.ts',
-        permanent: true
-      }
-    ]
   }
 }
 

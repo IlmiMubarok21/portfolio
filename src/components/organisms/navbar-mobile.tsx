@@ -93,10 +93,6 @@ export const navMenu = [
       {
         name: 'work.ts',
         path: '/about/work.ts'
-      },
-      {
-        name: 'gear.ts',
-        path: '/about/gear.ts'
       }
     ]
   },
@@ -114,20 +110,8 @@ export const navMenu = [
       {
         name: 'Next',
         path: '/projects?tag=next'
-      },
-      {
-        name: 'HTML',
-        path: '/projects?tag=html'
       }
     ]
-  },
-  {
-    name: '_guest-book',
-    path: '/guest-book'
-  },
-  {
-    name: '_articles',
-    path: '/articles'
   },
   {
     name: '_coding-activity',
@@ -155,23 +139,15 @@ export const navMenu = [
     child: [
       {
         name: 'Email',
-        path: 'mailto:wwicaksono96@gmail.com'
-      },
-      {
-        name: 'Upwork',
-        path: 'https://www.upwork.com/freelancers/~01df34d78e05fa69bf'
+        path: 'mailto:ilmimubarok21@gmail.com'
       },
       {
         name: 'WhatsApp',
-        path: 'https://wa.me/+6287885002327'
+        path: 'https://wa.me/+6289664934002'
       },
       {
         name: 'LinkedIn',
-        path: 'https://www.linkedin.com/in/wiscaksono/'
-      },
-      {
-        name: 'Instagram',
-        path: 'https://www.instagram.com/amachoker/'
+        path: 'https://www.linkedin.com/in/ilmi-mubarok/'
       }
     ]
   }
