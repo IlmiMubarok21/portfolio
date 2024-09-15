@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: ParamsProps }) {
   const project = await getProjectFromParams(params)
   if (!project) return {}
 
-  const title = project.title + ' | Mifolio'
+  const title = project.title + ' | Ilmi N. Mubarok'
   const description = project.summary
   const image = `${ENV.NEXT_PUBLIC_WEBSITE_URL}/api/og?title=${title.split(' ')[0]}`
 

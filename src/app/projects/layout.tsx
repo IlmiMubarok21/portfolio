@@ -58,14 +58,19 @@ const data = [
         icon: <HiTerminal className='w-4 h-4' />
       },
       {
-        title: 'React',
-        href: '/projects?tag=React',
+        title: 'React.js',
+        href: '/projects?tag=React.js',
         icon: <RiReactjsLine className='w-4 h-4' />
       },
       {
-        title: 'Next',
-        href: '/projects?tag=Next',
+        title: 'Next.js',
+        href: '/projects?tag=Next.js',
         icon: <TbBrandNextjs className='w-4 h-4' />
+      },
+      {
+        title: 'React Native',
+        href: '/projects?tag=React Native',
+        icon: <RiReactjsLine className='w-4 h-4' />
       }
     ]
   }

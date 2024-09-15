@@ -104,12 +104,16 @@ export const navMenu = [
         path: '/projects'
       },
       {
-        name: 'React',
-        path: '/projects?tag=react'
+        name: 'React.js',
+        path: '/projects?tag=React.js'
       },
       {
-        name: 'Next',
-        path: '/projects?tag=next'
+        name: 'Next.js',
+        path: '/projects?tag=Next.js'
+      },
+      {
+        name: 'React Native',
+        path: '/projects?tag=React Native'
       }
     ]
   },
@@ -139,7 +143,7 @@ export const navMenu = [
     child: [
       {
         name: 'Email',
-        path: 'mailto:ilmimubarok21@gmail.com'
+        path: 'mailto:contact@ilmimubarok.my.id'
       },
       {
         name: 'WhatsApp',
