@@ -87,12 +87,20 @@ export const navMenu = [
     name: '_about-me',
     child: [
       {
-        name: 'personal.ts',
-        path: '/about/personal.ts'
+        name: 'Bio',
+        path: '/about/bio'
       },
       {
-        name: 'work.ts',
-        path: '/about/work.ts'
+        name: 'Education',
+        path: '/about/education'
+      },
+      {
+        name: 'Experience',
+        path: '/about/experience'
+      },
+      {
+        name: 'Skill',
+        path: '/about/skill'
       }
     ]
   },
@@ -144,10 +152,6 @@ export const navMenu = [
       {
         name: 'Email',
         path: 'mailto:contact@ilmimubarok.my.id'
-      },
-      {
-        name: 'WhatsApp',
-        path: 'https://wa.me/+6289664934002'
       },
       {
         name: 'LinkedIn',

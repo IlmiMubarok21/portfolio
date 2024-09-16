@@ -20,7 +20,7 @@ const nextConfig = {
     return [
       {
         source: '/about',
-        destination: '/about/personal.ts',
+        destination: '/about/bio',
         permanent: true
       }
     ]
